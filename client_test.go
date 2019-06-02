@@ -21,9 +21,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/alejandro-carstens/elasticfork/config"
 	"github.com/fortytw2/leaktest"
-
-	"github.com/olivere/elastic/v7/config"
 )
 
 func findConn(s string, slice ...*conn) (int, bool) {
