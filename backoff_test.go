@@ -1,4 +1,4 @@
-package elastic
+package elasticfork
 
 import (
 	"math/rand"

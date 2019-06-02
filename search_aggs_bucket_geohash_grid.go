@@ -1,4 +1,4 @@
-package elastic
+package elasticfork
 
 type GeoHashGridAggregation struct {
 	field           string

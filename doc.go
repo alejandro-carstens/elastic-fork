@@ -3,7 +3,7 @@
 // See http://olivere.mit-license.org/license.txt for details.
 
 /*
-Package elastic provides an interface to the Elasticsearch server
+package elasticfork provides an interface to the Elasticsearch server
 (https://www.elastic.co/products/elasticsearch).
 
 The first thing you do is to create a Client. If you have Elasticsearch
@@ -48,4 +48,4 @@ and what kinds of responses you get when executing the Do function of a service.
 Also see the wiki on Github for more details.
 
 */
-package elastic
+package elasticfork

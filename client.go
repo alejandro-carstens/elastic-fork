@@ -2,7 +2,7 @@
 // Use of this source code is governed by a MIT-license.
 // See http://olivere.mit-license.org/license.txt for details.
 
-package elastic
+package elasticfork
 
 import (
 	"bytes"
@@ -19,7 +19,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/olivere/elastic/v7/config"
+	"github.com/alejandro-carstens/elasticfork/config"
 	"github.com/pkg/errors"
 )
 

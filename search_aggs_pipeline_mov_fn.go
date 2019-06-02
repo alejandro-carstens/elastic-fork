@@ -2,7 +2,7 @@
 // Use of this source code is governed by a MIT-license.
 // See http://olivere.mit-license.org/license.txt for details.
 
-package elastic
+package elasticfork
 
 // MovFnAggregation, given an ordered series of data, will slice a window across
 // the data and allow the user to specify a custom script that is executed for

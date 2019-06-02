@@ -2,7 +2,7 @@
 // Use of this source code is governed by a MIT-license.
 // See http://olivere.mit-license.org/license.txt for details.
 
-package elastic
+package elasticfork
 
 // MatchAllQuery is the most simple query, which matches all documents,
 // giving them all a _score of 1.0.

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a MIT-license.
 // See http://olivere.mit-license.org/license.txt for details.
 
-package elastic
+package elasticfork
 
 import (
 	"bytes"
@@ -11,7 +11,7 @@ import (
 	"fmt"
 	"net/url"
 
-	"github.com/olivere/elastic/v7/uritemplates"
+	"github.com/alejandro-carstens/elasticfork/uritemplates"
 )
 
 // BulkService allows for batching bulk requests and sending them to
