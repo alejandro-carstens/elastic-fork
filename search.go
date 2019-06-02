@@ -12,7 +12,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/olivere/elastic/v7/uritemplates"
+	"github.com/alejandro-carstens/elasticfork/uritemplates"
 )
 
 // Search for documents in Elasticsearch.

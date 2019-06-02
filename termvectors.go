@@ -10,7 +10,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/olivere/elastic/v7/uritemplates"
+	"github.com/alejandro-carstens/elasticfork/uritemplates"
 )
 
 // TermvectorsService returns information and statistics on terms in the

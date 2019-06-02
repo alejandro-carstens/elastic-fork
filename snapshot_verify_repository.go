@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"net/url"
 
-	"github.com/olivere/elastic/v7/uritemplates"
+	"github.com/alejandro-carstens/elasticfork/uritemplates"
 )
 
 // SnapshotVerifyRepositoryService verifies a snapshop repository.

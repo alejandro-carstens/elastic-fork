@@ -11,7 +11,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/olivere/elastic/v7/uritemplates"
+	"github.com/alejandro-carstens/elasticfork/uritemplates"
 )
 
 // SnapshotDeleteRepositoryService deletes a snapshot repository.

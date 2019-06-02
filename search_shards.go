@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/olivere/elastic/v7/uritemplates"
+	"github.com/alejandro-carstens/elasticfork/uritemplates"
 )
 
 // SearchShardsService returns the indices and shards that a search request would be executed against.

@@ -19,7 +19,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/alejandro-carstens/elasticfork/config"
+	"github.com/alejandro-carstens/elasticfork/uritemplates"
 	"github.com/pkg/errors"
 )
 
