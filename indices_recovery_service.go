@@ -1,6 +1,7 @@
 package elasticfork
 
 import (
+	"context"
 	"fmt"
 	"net/url"
 	"strings"
@@ -16,8 +17,8 @@ type IndicesRecoveryService struct {
 	activeOnly *bool
 }
 
-func NewSnapshotRestoreService(client *Client) *SnapshotRestoreService {
-	return &SnapshotRestoreService{
+func NewIndicesRecoveryService(client *Client) *IndicesRecoveryService {
+	return &IndicesRecoveryService{
 		client: client,
 	}
 }
@@ -36,7 +37,7 @@ func (irs *IndicesRecoveryService) buildURL() (string, url.Values, error) {
 	var err error
 	var path string
 
-	if len(s.nodeId) > 0 {
+	if len(irs.indices) > 0 {
 		path, err = uritemplates.Expand("/{indices}/_recovery", map[string]string{
 			"indices": strings.Join(irs.indices, ","),
 		})
@@ -65,7 +66,7 @@ func (irs *IndicesRecoveryService) buildURL() (string, url.Values, error) {
 	return path, params, nil
 }
 
-func (irs *IndicesRecoveryService) Do() (*Response, error) {
+func (irs *IndicesRecoveryService) Do(ctx context.Context) (*Response, error) {
 	path, params, err := irs.buildURL()
 
 	if err != nil {

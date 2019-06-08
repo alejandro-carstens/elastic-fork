@@ -1806,7 +1806,6 @@ func (c *Client) TasksGetTask() *TasksGetTaskService {
 
 // TODO Snapshot Delete
 // TODO Snapshot Get
-// TODO Snapshot Restore
 // TODO Snapshot Status
 
 // SnapshotCreate creates a snapshot.
@@ -1847,6 +1846,11 @@ func (c *Client) SnapshotVerifyRepository(repository string) *SnapshotVerifyRepo
 // SnapshotRestore restores the specified indices from a given snapshot
 func (c *Client) SnapshotRestore(repository string, snapshot string) *SnapshotRestoreService {
 	return NewSnapshotRestoreService(c).Repository(repository).Snapshot(snapshot)
+}
+
+// IndicesRecovery verifies the status of indices being restored
+func (c *Client) IndicesRecovery() *IndicesRecoveryService {
+	return NewIndicesRecoveryService(c)
 }
 
 // -- Scripting APIs --
