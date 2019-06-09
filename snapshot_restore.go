@@ -205,10 +205,6 @@ func (s *SnapshotRestoreService) buildURL() (string, url.Values, error) {
 		params.Set("wait_for_completion", fmt.Sprintf("%v", *s.waitForCompletion))
 	}
 
-	if s.ignoreUnavailable != nil {
-		params.Set("ignore_unavailable", fmt.Sprintf("%v", *s.ignoreUnavailable))
-	}
-
 	return path, params, nil
 }
 
@@ -225,6 +221,10 @@ func (s *SnapshotRestoreService) buildBody() interface{} {
 
 	if s.includeAliases != nil {
 		body["include_aliases"] = *s.includeAliases
+	}
+
+	if s.ignoreUnavailable != nil {
+		body["ignore_unavailable"] = *s.ignoreUnavailable
 	}
 
 	if len(s.indices) > 0 {
